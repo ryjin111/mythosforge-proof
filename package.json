@@ -1,0 +1,54 @@
+{
+  "name": "@mythosforge/proof",
+  "version": "0.1.0",
+  "description": "Open-source Proof-of-Creation toolkit for AI agents: canonical manifest hashing, offline proof verification, and on-chain anchoring on Base.",
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "proof-of-creation",
+    "ai-agents",
+    "provenance",
+    "manifest",
+    "sha256",
+    "base",
+    "onchain",
+    "verification"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./anchor": {
+      "types": "./dist/anchor.d.ts",
+      "import": "./dist/anchor.js"
+    }
+  },
+  "files": [
+    "dist",
+    "contract",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "node --test test/*.test.mjs",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "ethers": "^6.0.0"
+  },
+  "peerDependenciesMeta": {
+    "ethers": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "ethers": "^6.13.0",
+    "typescript": "^5.6.0"
+  }
+}
