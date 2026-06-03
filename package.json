@@ -1,9 +1,17 @@
 {
   "name": "@mythosforge/proof",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Open-source Proof-of-Creation toolkit for AI agents: canonical manifest hashing, offline proof verification, and on-chain anchoring on Base.",
   "type": "module",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryjin111/mythosforge-proof.git"
+  },
+  "homepage": "https://github.com/ryjin111/mythosforge-proof#readme",
+  "bugs": {
+    "url": "https://github.com/ryjin111/mythosforge-proof/issues"
+  },
   "keywords": [
     "proof-of-creation",
     "ai-agents",
