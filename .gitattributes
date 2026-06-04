@@ -1,0 +1,4 @@
+# Shell scripts and Node ESM runners must keep LF — they run under WSL/Linux,
+# where CRLF breaks the shebang and `bash` parsing.
+*.sh  text eol=lf
+*.mjs text eol=lf

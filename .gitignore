@@ -4,3 +4,6 @@ dist/
 .DS_Store
 .env
 .env.*
+# scratch/debug shell snippets from local WSL gitlawb sessions
+_*.sh
+.verify.out
